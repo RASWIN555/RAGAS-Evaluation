@@ -99,7 +99,7 @@ Thumbs.db
 data/
 *.csv
 *.json
-evaluation/
+
 evaluation_results/
 *.png
 *.csv
