@@ -1,0 +1,9 @@
+langchain
+openai
+pinecone
+dotenv
+ragas
+pandas
+jupyter
+matplotlib
+seaborn

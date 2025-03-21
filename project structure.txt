@@ -1,0 +1,25 @@
+ragas-evaluation/
+│
+├── data/
+│   ├── raw/                      # Raw data (documents, datasets)
+│   └── processed/                # Preprocessed / chunked data
+│
+├── retriever/                    
+│   ├── index_setup.py            # Script to create Pinecone index & add embeddings
+│   └── retriever_config.py       # Pinecone + embedding model configuration
+│
+├── generator/
+│   └── qa_chain.py               # LangChain RetrievalQA setup
+│
+├── evaluation/
+│   ├── run_ragas_eval.py         # Main evaluation script (Ragas usage)
+│   ├── metrics_config.py         # Configure Ragas metrics
+│   └── evaluation_results/       # Store results (JSON, CSV, visualizations)
+│
+├── notebooks/
+│   └── ragas_evaluation_demo.ipynb # Optional: Jupyter notebook version
+│
+├── .env                          # Store API keys securely (OpenAI, Pinecone)
+├── requirements.txt              # Required Python packages
+├── README.md                     # Project explanation
+└── main.py                       # High-level script (loads retriever, runs generator & evaluation)
